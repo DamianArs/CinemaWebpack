@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cinema</title>
+    <link rel="stylesheet" href="./../src/fontello/css/fontello.css">
+</head>
+
+<body>
+    <main id="container">
+        <header>
+            <section id="logo">
+                <h1>
+                    <section>Custom Cinema</section>
+                    <section><img src="images/camera.png" alt="camera" width="50px" height="50px"></section>
+                </h1>
+            </section>
+            <section id="nav">
+                <ul class="display">
+                    <li><a href="#choice">Repertuar</a></li>
+                    <li><a href="#price">Cennik</a></li>
+                    <li><a href="#ticket">Kup bilet</a></li>
+                    <li><a href="#login">Logowanie</a></li>
+                </ul>
+            </section>
+            <article id=menu>
+                <section id=bar1 class=bar></section>
+                <section id=bar2 class=bar></section>
+                <section id=bar3 class=bar></section>
+            </article>
+        </header>
+        <!-- --------------------------------------------------------------------------------------------------------------------------- -->
+        <article id="slider">
+            <h1 class="h1Slider">NOWOŚCI</h1>
+            <button id="right">></button>
+            <button id="left">
+                <</button> <h2>CORGI | Animowany | 7 lat | 85 min</h2>
+        </article>
+        <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+        <article class="repertuar">
+            <section id="choice">
+                <select id="select">
+                    <option value="">WYBIERZ KINO</option>
+                    <option value="Katowice">Katowice</option>
+                    <option value="Warszawa">Warszawa</option>
+                    <option value="Kraków">Kraków</option>
+                </select>
+                <button id="views">Pokaż repertuar</button>
+            </section>
+            <section id="explain">
+                <h1><span>Repertuar</span></h1>
+                <h2>Custom Cinema</h2>
+                <h3><span id="city"></span></h3>
+                <h3 id="here"></h3>
+            </section>
+        </article>
+        <!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+        <article id="price_container">
+            <h1><span>Cennik</span></h1>
+            <article id="price">
+                <section class="prices">
+                    <img src="images/ticket.png" width=120px height="100px">
+                    <h2>25 złotych</h2>
+                </section>
+                <section class="prices">
+                    <img src="images/popcorn.png" width=120px height="100px">
+                    <h2>10 złotych</h2>
+                </section>
+                <section class="prices">
+                    <img src="images/pepsi.png" width=120px height="100px">
+                    <h2>8 złotych</h2>
+                </section>
+            </article>
+        </article>
+        <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+        <!-- Choice -->
+        <article id="ticket">
+            <h1><span id="span">Kup bilet</span></h1>
+            <article id="ticketContainer">
+                <section>
+                    <a href="#login" id='loginYou'>Zaloguj się</a>
+                </section>
+                <section>
+                    <select id="select" class="cityHall select1">
+                        <option value="">WYBIERZ KINO</option>
+                        <option value="Katowice">Katowice</option>
+                        <option value="Warszawa">Warszawa</option>
+                        <option value="Kraków">Kraków</option>
+                    </select>
+                </section>
+                <section>
+                    <select id="select" class="select2">
+                        <option value="">WYBIERZ FILM</option>
+                        <option value="After">AFTER</option>
+                        <option value="Avengers">AVENGERS</option>
+                        <option value="Corgi">CORGI</option>
+                        <option value="Kurier">KURIER</option>
+                    </select>
+                </section>
+                <section>
+                    <select id="select" class="select3">
+                        <option value="">WYBIERZ GODZINĘ</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </section>
+                <section>
+                    <button id="buy" class="confirm">
+                        Zatwierdź
+                    </button>
+                </section>
+            </article>
+
+
+            <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+            <!-- Cinema -->
+            <article id="hallContainer">
+                <section id="cinemaHall">
+
+                </section>
+                <section class="summary">
+                    <button id="cancel">Anuluj</button>
+                    <h2><span id='clock'></span></h2>
+                    <h1>Cena: <span id=price_of_tickets></span> złotych</h1>
+                    <button id=apply>Zatwierdź</button>
+                    <h1 id="summary">Podsumowanie</h1>
+                    <h2>Film: <span id="titleOfFilm"></span></h2>
+                    <h2>Godzina: <span id=hourOfFilm></span></h2>
+                    <h2 id="place">Twoje miejsce:</h2>
+                    <ul id="your_places">
+
+                    </ul>
+                    <h2>Do zapłaty: <span id=last_price></span> złotych</h2>
+                    <a href="#" target="_blank" id="ahref">Akceptuj zamówienie</a>
+                </section>
+            </article>
+        </article>
+        <article id="login">
+            <section>
+                <h1><span>Zaloguj się</span></h1>
+            </section>
+            <section>
+                <input type="email" id="email" class="regex" name='email' placeholder="Podaj email">
+                <section>
+                    <input type="password" id="password" class="regex" name='password' placeholder="Podaj hasło">
+                </section>
+                <section>
+                    <button class="login" id="acceptLogin">Zaloguj</button>
+                </section>
+                <section>
+                    <button class="login" id='logout'>Wyloguj</button>
+                </section>
+                <section>
+                    <h2 id="alert"><span></span></h2>
+                </section>
+        </article>
+    </main>
+    <!-- Footer----------------------------------------------------------------------------------------- -->
+    <footer>
+        <article>
+            <section id="footer">
+                <a href="https://www.facebook.com/" target="_blank"><i class="icon-facebook-circled"></i></a>
+                <a href="https://twitter.com/?lang=pl" target="_blank"><i class="icon-twitter-squared"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="icon-instagram-1"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class=" icon-youtube-squared"></i></a>
+            </section>
+            <section id='copyright'>
+                <p>&copy; Copyright Damian Arsenicz 2019</p>
+            </section>
+        </article>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="./../src/user.js"></script>
+    <script src="./../src/base.js"></script>
+</body>
+
+</html>
